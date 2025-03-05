@@ -1,96 +1,96 @@
-# æ±‡çŽ‡è®¡ç®—å™¨
+# »ãÂÊ¼ÆËãÆ÷
 
-ä¸€ä¸ªåŸºäºŽ Vue 3 + Electron çš„è·¨å¹³å°æ¡Œé¢åº”ç”¨ï¼Œç”¨äºŽå®žæ—¶èŽ·å–å’Œè®¡ç®—è´§å¸æ±‡çŽ‡ã€‚
+Ò»¸ö»ùÓÚ Vue 3 + Electron µÄ¿çÆ½Ì¨×ÀÃæÓ¦ÓÃ£¬ÓÃÓÚÊµÊ±»ñÈ¡ºÍ¼ÆËã»õ±Ò»ãÂÊ¡£
 
-## æŠ€æœ¯æ ˆ
+## ¼¼ÊõÕ»
 
-- **å‰ç«¯æ¡†æž¶**: Vue 3
-- **æ¡Œé¢æ¡†æž¶**: Electron 13
-- **UI ç»„ä»¶åº“**: Element Plus
-- **æ•°æ®åº“**: Dexie (IndexedDB)
-- **HTTP å®¢æˆ·ç«¯**: Axios
-- **æž„å»ºå·¥å…·**: Vue CLI + vue-cli-plugin-electron-builder
-- **å¼€å‘è¯­è¨€**: JavaScript/Vue
+- **Ç°¶Ë¿ò¼Ü**: Vue 3
+- **×ÀÃæ¿ò¼Ü**: Electron 13
+- **UI ×é¼þ¿â**: Element Plus
+- **Êý¾Ý¿â**: Dexie (IndexedDB)
+- **HTTP ¿Í»§¶Ë**: Axios
+- **¹¹½¨¹¤¾ß**: Vue CLI + vue-cli-plugin-electron-builder
+- **¿ª·¢ÓïÑÔ**: JavaScript/Vue
 
-## å¼€å‘çŽ¯å¢ƒè®¾ç½®
+## ¿ª·¢»·¾³ÉèÖÃ
 
-### å®‰è£…ä¾èµ–
+### °²×°ÒÀÀµ
 ```bash
-# å®‰è£…é¡¹ç›®ä¾èµ–
+# °²×°ÏîÄ¿ÒÀÀµ
 npm install
 ```
 
-### å¼€å‘å‘½ä»¤
+### ¿ª·¢ÃüÁî
 ```bash
-# å¯åŠ¨å¼€å‘æœåŠ¡å™¨ï¼ˆå¸¦çƒ­é‡è½½ï¼‰
+# Æô¶¯¿ª·¢·þÎñÆ÷£¨´øÈÈÖØÔØ£©
 npm run electron:serve
 
-# æ‰“åŒ…åº”ç”¨
+# ´ò°üÓ¦ÓÃ
 npm run electron:build
 
-# ä»£ç æ£€æŸ¥
+# ´úÂë¼ì²é
 npm run lint
 
-# ä»£ç æ£€æŸ¥å¹¶è‡ªåŠ¨ä¿®å¤
+# ´úÂë¼ì²é²¢×Ô¶¯ÐÞ¸´
 npm run lint -- --fix
 ```
 
-## é¡¹ç›®ç»“æž„
+## ÏîÄ¿½á¹¹
 ```
 currency-converter-app/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ assets/          # é™æ€èµ„æº
-â”‚   â”œâ”€â”€ components/      # Vue ç»„ä»¶
-â”‚   â”œâ”€â”€ utils/          # å·¥å…·å‡½æ•°
-â”‚   â”œâ”€â”€ App.vue         # æ ¹ç»„ä»¶
-â”‚   â”œâ”€â”€ background.js   # Electron ä¸»è¿›ç¨‹
-â”‚   â”œâ”€â”€ main.js        # Vue å…¥å£æ–‡ä»¶
-â”‚   â””â”€â”€ preload.js     # Electron é¢„åŠ è½½è„šæœ¬
-â”œâ”€â”€ public/            # å…¬å…±èµ„æº
-â”œâ”€â”€ vue.config.js      # Vue å’Œ Electron é…ç½®
-â””â”€â”€ package.json       # é¡¹ç›®é…ç½®å’Œä¾èµ–
+©À©¤©¤ src/
+©¦   ©À©¤©¤ assets/          # ¾²Ì¬×ÊÔ´
+©¦   ©À©¤©¤ components/      # Vue ×é¼þ
+©¦   ©À©¤©¤ utils/          # ¹¤¾ßº¯Êý
+©¦   ©À©¤©¤ App.vue         # ¸ù×é¼þ
+©¦   ©À©¤©¤ background.js   # Electron Ö÷½ø³Ì
+©¦   ©À©¤©¤ main.js        # Vue Èë¿ÚÎÄ¼þ
+©¦   ©¸©¤©¤ preload.js     # Electron Ô¤¼ÓÔØ½Å±¾
+©À©¤©¤ public/            # ¹«¹²×ÊÔ´
+©À©¤©¤ vue.config.js      # Vue ºÍ Electron ÅäÖÃ
+©¸©¤©¤ package.json       # ÏîÄ¿ÅäÖÃºÍÒÀÀµ
 ```
 
-## æ•°æ®æ¥æº
+## Êý¾ÝÀ´Ô´
 
-æ±‡çŽ‡æ•°æ®æ¥è‡ªä¸‡äº‹è¾¾å¡å®˜æ–¹ APIï¼š
-- API åœ°å€ï¼šhttps://www.mastercard.com.cn/settlement/currencyrate/conversion-rate
-- æ›´æ–°æ—¶é—´ï¼šæ¯å¤©ç¾Žä¸œæ—¶é—´ä¸‹åˆ 4:00ï¼ˆåŒ—äº¬æ—¶é—´æ¬¡æ—¥å‡Œæ™¨ 4:00 æˆ– 5:00ï¼‰
+»ãÂÊÊý¾ÝÀ´×ÔÍòÊÂ´ï¿¨¹Ù·½ API£º
+- API µØÖ·£ºhttps://www.mastercard.com.cn/settlement/currencyrate/conversion-rate
+- ¸üÐÂÊ±¼ä£ºÃ¿ÌìÃÀ¶«Ê±¼äÏÂÎç 4:00£¨±±¾©Ê±¼ä´ÎÈÕÁè³¿ 4:00 »ò 5:00£©
 
-## ä¸»è¦åŠŸèƒ½
+## Ö÷Òª¹¦ÄÜ
 
-- æ”¯æŒå¤šç§è´§å¸å®žæ—¶è½¬æ¢
-- åŽ†å²æ±‡çŽ‡è®°å½•æŸ¥è¯¢
-- æ‰‹ç»­è´¹è®¡ç®—
-- ç¦»çº¿æ•°æ®å­˜å‚¨
-- è‡ªå®šä¹‰è½¬æ¢ç»„åˆ
+- Ö§³Ö¶àÖÖ»õ±ÒÊµÊ±×ª»»
+- ÀúÊ·»ãÂÊ¼ÇÂ¼²éÑ¯
+- ÊÖÐø·Ñ¼ÆËã
+- ÀëÏßÊý¾Ý´æ´¢
+- ×Ô¶¨Òå×ª»»×éºÏ
 
-## å¼€å‘æ³¨æ„äº‹é¡¹
+## ¿ª·¢×¢ÒâÊÂÏî
 
-1. å¼€å‘æ—¶éœ€è¦ç¡®ä¿ç½‘ç»œèƒ½è®¿é—®ä¸‡äº‹è¾¾å¡ API
-2. é¦–æ¬¡è¿è¡Œéœ€è¦åˆå§‹åŒ–æœ¬åœ°æ•°æ®åº“
-3. æ‰“åŒ…æ—¶æ³¨æ„é…ç½®ç›¸åº”çš„å›¾æ ‡å’Œåº”ç”¨ä¿¡æ¯
-4. æ³¨æ„å¤„ç† API è¯·æ±‚çš„é”™è¯¯å’Œè¶…æ—¶
-5. è€ƒè™‘ç¾Žä¸œæ—¶é—´ä¸Žæœ¬åœ°æ—¶é—´çš„è½¬æ¢
+1. ¿ª·¢Ê±ÐèÒªÈ·±£ÍøÂçÄÜ·ÃÎÊÍòÊÂ´ï¿¨ API
+2. Ê×´ÎÔËÐÐÐèÒª³õÊ¼»¯±¾µØÊý¾Ý¿â
+3. ´ò°üÊ±×¢ÒâÅäÖÃÏàÓ¦µÄÍ¼±êºÍÓ¦ÓÃÐÅÏ¢
+4. ×¢Òâ´¦Àí API ÇëÇóµÄ´íÎóºÍ³¬Ê±
+5. ¿¼ÂÇÃÀ¶«Ê±¼äÓë±¾µØÊ±¼äµÄ×ª»»
 
-## æž„å»ºäº§ç‰©
+## ¹¹½¨²úÎï
 
-æž„å»ºåŽçš„åº”ç”¨ä½äºŽï¼š
+¹¹½¨ºóµÄÓ¦ÓÃÎ»ÓÚ£º
 ```
 dist_electron/
-â”œâ”€â”€ win-unpacked/      # å…å®‰è£…ç‰ˆ
-â”‚   â””â”€â”€ æ±‡çŽ‡è®¡ç®—å™¨.exe
-â””â”€â”€ æ±‡çŽ‡è®¡ç®—å™¨.exe      # ä¾¿æºç‰ˆ
+©À©¤©¤ win-unpacked/      # Ãâ°²×°°æ
+©¦   ©¸©¤©¤ »ãÂÊ¼ÆËãÆ÷.exe
+©¸©¤©¤ »ãÂÊ¼ÆËãÆ÷.exe      # ±ãÐ¯°æ
 ```
 
-## ç‰ˆæœ¬åŽ†å²
+## °æ±¾ÀúÊ·
 
 - v1.0.0
-  - åŸºç¡€è´§å¸è½¬æ¢åŠŸèƒ½
-  - åŽ†å²è®°å½•æŸ¥è¯¢
-  - æ‰‹ç»­è´¹è®¡ç®—
-  - ç¦»çº¿æ•°æ®å­˜å‚¨
+  - »ù´¡»õ±Ò×ª»»¹¦ÄÜ
+  - ÀúÊ·¼ÇÂ¼²éÑ¯
+  - ÊÖÐø·Ñ¼ÆËã
+  - ÀëÏßÊý¾Ý´æ´¢
 
-## è®¸å¯è¯
+## Ðí¿ÉÖ¤
 
 MIT License
